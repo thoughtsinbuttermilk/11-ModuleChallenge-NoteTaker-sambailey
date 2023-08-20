@@ -1,7 +1,7 @@
 // https://expressjs.com/en/4x/api.html#router  
 
 const router = require('express').Router();
-const {createNewNote} = require('../../lib/notes.js');
+const {createNewNote} = require('../../lib/notes');
 const {notes} = require('../../db/db');
 
 router.get('/notes', (req, res) => {

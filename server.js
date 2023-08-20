@@ -1,7 +1,7 @@
 const express = require('express');
 
 // returns an object containing the user environment
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8080;
 // creates a new express app
 const app = express();
 // const routes require('./routes');

@@ -1,4 +1,4 @@
-const express = require('express').Router();
+const router = require('express').Router();
 const {createNotes} = require('../lib/notes');
 const {notes} = require('../../db/db.json');
 

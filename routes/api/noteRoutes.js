@@ -4,9 +4,9 @@ const router = require('express').Router();
 const {createNotes} = require('../lib/notes');
 const {notes} = require('../../db/db.json');
 
-router.get('/notes', (req, res) => {let result = notes; res.json(result);});
+router.get('../lib/notes.js', (req, res) => {let result = notes; res.json(result);});
 
-router.post('/notes', (req, res) => {
+router.post('../lib/notes.js', (req, res) => {
     const notes = (createNotes)(req.body.notes);
     res.json(notes);
 });

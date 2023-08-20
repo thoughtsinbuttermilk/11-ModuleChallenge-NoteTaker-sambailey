@@ -2,7 +2,7 @@
     "notes": [
       {
         "title": "test: title",
-        "text": "test: text"
+        "text": "test: text",
         "id": "0"
       },
       {
@@ -13,7 +13,7 @@
       {
         "title": "title: pick up rx",
         "text": "text: rx ready at 6, pick up at 151 n. state street walgreens",
-        "id": "6"
+        "id": "2"
       }
     ]
   }

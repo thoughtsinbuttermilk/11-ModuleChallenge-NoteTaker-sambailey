@@ -3,7 +3,7 @@ const router = require('express').Router();
 // const fs = require('filesys');
 const path = require('path');
 
-router.get('../../lib/notes.js', (req, res) => {
+router.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '../../public/notes.html'));
 });
 

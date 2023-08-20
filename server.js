@@ -5,8 +5,8 @@ const PORT = process.env.PORT || 3001;
 // creates a new express app
 const app = express();
 // const routes require('./routes');
-const apiRoutes = require('./routes/apiRoutes');
-const htmlRoutes = require('./routes/htmlRoutes');
+const apiRoutes = require('./routes/api/index.js');
+const htmlRoutes = require('./routes/html/index.js');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

@@ -11,4 +11,4 @@ router.post('../../lib/notes.js', (req, res) => {
     res.json(notes);
 });
 
-module.exports = {router};
+module.exports = router;

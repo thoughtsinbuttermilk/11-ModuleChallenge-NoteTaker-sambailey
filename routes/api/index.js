@@ -15,4 +15,4 @@ router.post('/notes', (req, res) => {
     res.json(newNote);
 });
 
-module.exports = {router};
+module.exports = router;

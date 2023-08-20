@@ -8,7 +8,7 @@ const app = express();
 const apiRoutes = require('./routes/api/index.js');
 const htmlRoutes = require('./routes/html/index.js');
 
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.static('public'));
 

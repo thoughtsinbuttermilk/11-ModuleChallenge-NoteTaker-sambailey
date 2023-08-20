@@ -3,4 +3,4 @@ const  routeNotes = require('./notes');
 
 router.use('/notes', routeNotes);
 
-module.exports = router;
+module.exports = {router};

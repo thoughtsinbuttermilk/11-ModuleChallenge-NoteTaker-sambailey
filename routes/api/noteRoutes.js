@@ -2,7 +2,7 @@
 
 const router = require('express').Router();
 const {createNewNote} = require('../../lib/notes.js');
-const {notes} = require('../../db/db.json');
+const {notes} = require('../../db/db');
 
 router.get('/notes', (req, res) => {
     let results = notes;

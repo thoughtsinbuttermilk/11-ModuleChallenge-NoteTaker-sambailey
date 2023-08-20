@@ -16,6 +16,6 @@ app.use('./api', apiRoutes);
 app.use('/', htmlRoutes);
 
 app.listen(PORT, () => {
-    console.log(`App listening on PORT ${PORT}`);
-    console.log('Press Ctrl+C to quit.');
+    console.log(`app listening on PORT ${PORT}`);
+    console.log('press ctrl+c to quit.');
 });

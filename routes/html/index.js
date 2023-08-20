@@ -1,7 +1,6 @@
 // https://expressjs.com/en/4x/api.html#router
-const router = require('express').Router();
-// const fs = require('filesys');
 const path = require('path');
+const router = require('express').Router();
 
 router.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '../../public/notes.html'));

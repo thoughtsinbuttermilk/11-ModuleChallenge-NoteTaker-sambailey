@@ -1,3 +1,9 @@
 {
-    "notes": []
+  "notes": [
+    {
+      "title": "foo",
+      "text": "bar",
+      "id": "a8132689-b554-4d55-8ba9-7fa39acdfc0f"
+    }
+  ]
 }

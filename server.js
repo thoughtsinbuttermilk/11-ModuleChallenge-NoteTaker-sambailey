@@ -15,8 +15,8 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // ROUTERS
-app.use('../api', apiRoutes);
-app.use('../html', htmlRoutes);
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 
 // LISTENER
 app.listen(PORT, () => {

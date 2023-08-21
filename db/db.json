@@ -1,9 +1,10 @@
 {
-  "notesArray": [
+revertToWorking
+  "notes": [
     {
       "title": "foo",
       "text": "bar",
-      "id": "b3ef24af-8f2b-4fce-97fa-1d34213927a5"
+      "id": "a8132689-b554-4d55-8ba9-7fa39acdfc0f"
     }
   ]
 }

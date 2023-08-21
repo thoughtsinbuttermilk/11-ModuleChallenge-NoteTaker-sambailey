@@ -1,5 +1,7 @@
+// DEPENDENCIES
 const router = require('express').Router();
 // use uuid to generate unique ids for each note
+// see: https://www.npmjs.com/package/uuid
 const {v4: uuidv4} = require('uuid');
 const {notes} = require('../../db/db');
 const {createNewNote, findById, editNote, removeNote} = require('../../lib/notes');
@@ -13,7 +15,7 @@ router.get('/notes', (req, res) => {
 // implement posting a new note
 router.post('/notes', (req, res) => {
 
-    // creates new note if id exists, otherwise edits existing note
+    // TODO: EDIT ISN'T WORKING AS EXPECTED
     if (!req.body.id) {
         req.body.id = uuidv4();
         createNewNote(req.body, notes);
@@ -30,12 +32,5 @@ router.delete('/notes/:id', (req, res) => {
     removeNote(note, notes);
     res.json();
 });
-
-// router.delete('/notes/:id', (req, res) => {
-//     const note = findById(req.params.id, notes);
-
-//     removeNote(note, notes);
-//     res.json();
-// });
 
 module.exports = router;

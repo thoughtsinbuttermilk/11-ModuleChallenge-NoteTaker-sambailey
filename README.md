@@ -40,7 +40,7 @@ The application was built using [node.js, v20.5.0](https://nodejs.org/en), an as
 ## Installation, usage instructions and known issue
 
 <details>
-<summary> Expand for installation and usage instructions</summary>
+<summary> Expand for installation, usage instructions and known issues</summary>
 
 Users or contributors can run the application locally or in a hosted environment: 
 
@@ -88,6 +88,7 @@ Users or contributors can run the application locally or in a hosted environment
     Expected behavior: The note will be deleted from the application's database and the window will be refreshed.
 
     *Known issues*
+   
     • When editing an existing note, the "write" icon does not appear in the upper right corner of the application window. This issue is cosmetic, notes can still be edited by placing the cursor in the title or text fields and pressing the "save" icon. This issue needs be investigated, I need to more closely examine the starter code for the front-end, and addressed in the 1.v1 release of the application.
 
     • After editing a note, the original text will display in the main window. I believe I need to add a `e.stopPropagation();` method to resolve this issue. It will be addressed in the 1.v1 release of the application.

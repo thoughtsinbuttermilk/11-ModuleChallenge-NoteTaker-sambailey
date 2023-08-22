@@ -46,8 +46,6 @@ Users or contributors can run the application locally or in a hosted environment
 
 1.  **Clone the repository, run the application locally**
 
-    • Run the application by entering `node index.js` in the `terminal` and follow the prompts
-
     • Clone the repository: `git clone git@github.com:thoughtsinbuttermilk/11-ModuleChallenge-NoteTaker-sambailey.git`
 
     • Install required frameworks, dependencies and packages by opening a terminal instance and running `npm install`

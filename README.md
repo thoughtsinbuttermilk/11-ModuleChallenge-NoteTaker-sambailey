@@ -1,142 +1,121 @@
-# 11 Express.js: Note Taker
+# 11 ModuleChallenge NoteTaker sambailey
 
-## Your Task
+Northwestern Bootcamp challenge week 11
 
-Your assignment is to modify starter code to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Heroku.
+![markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 
+![javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## User Story
+![node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
-```
-AS A small business owner
-I WANT to be able to write and save notes
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
-```
+![express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
 
+# Table of Contents
 
-## Acceptance Criteria
+- [11 ModuleChallenge NoteTaker sambailey](#11-modulechallenge-notetaker-sambailey)
+- [Table of Contents](#table-of-contents)
+  - [Project description](#project-description)
+  - [Application functionality](#application-functionality)
+  - [Technology used](#technology-used)
+  - [Installation, usage instructions and known issue](#installation-usage-instructions-and-known-issue)
+  - [Testing](#testing)
+  - [Video walkthroughs](#video-walkthroughs)
+  - [Screen captures](#screen-captures)
+  - [Credits and notes for the graders](#credits-and-notes-for-the-graders)
 
-```
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a Save icon appears in the navigation at the top of the page
-WHEN I click on the Save icon
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column
-WHEN I click on the Write icon in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
-```
+## Project description
 
+The intent of this project was to build a note taker application using JavaScript, Node.js and Express.js. and learn build deployment using Heroku.
 
-## Mock-Up
+## Application functionality
 
-The following images show the web application's appearance and functionality:
+When the application is run in a browser, users can create, view, edit, and delete notes.
 
-![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/11-express-homework-demo-01.png)
+## Technology used
 
-![Note titled “Balance accounts” reads, “Balance account books by end of day Monday,” with other notes listed on the left.](./Assets/11-express-homework-demo-02.png)
+The application was built using [node.js, v20.5.0](https://nodejs.org/en), an asynchronous, event-driven JavaScript runtime designed to build scalable network applications, [express.js 4.18.2](https://expressjs.com/), a fast, _allegedly_ un-opinionated, minimalist web framework for Node.js and [the uuidv4 package](https://www.npmjs.com/package/uuidv4) to create uuids for the notes.
 
+## Installation, usage instructions and known issue
 
-## Getting Started
+<details>
+<summary> Expand for installation and usage instructions</summary>
 
-On the back end, the application should include a `db.json` file that will be used to store and retrieve notes using the `fs` module.
+Users or contributors can run the application locally or in a hosted environment: 
 
-The following HTML routes should be created:
+1.  **Clone the repository, run the application locally**
 
-* `GET /notes` should return the `notes.html` file.
+    • Run the application by entering `node index.js` in the `terminal` and follow the prompts
 
-* `GET *` should return the `index.html` file.
+    • Clone the repository: `git clone git@github.com:thoughtsinbuttermilk/11-ModuleChallenge-NoteTaker-sambailey.git`
 
-The following API routes should be created:
+    • Install required frameworks, dependencies and packages by opening a terminal instance and running `npm install`
 
-* `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
+    • In the `terminal`, run `node server.js`, then open a browser and point the url to `localhost:8080`
 
-* `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
+    • Press `control+c` to close the application
 
+2.  **Run the hosted application**
+        The note taker application is deployed and hosted using Heroku. Simply point a browser at: https://modulechallenge11-note-taker-ff941a52a963.herokuapp.com/
 
-## Bonus
+3. **Usage instructions**
+    
+    After the application is running in a browser, either locally or hosted
 
-You haven’t learned how to handle DELETE requests, but this application offers that functionality on the front end. As a bonus, try to add the DELETE route to the application using the following guideline:
+    *Create a new note*
+    1. Press "Get Started" button
+    2. Enter a title and text for the note (both are required)
+    3. Press the Save icon in the upper right corner of the application window
 
-* `DELETE /api/notes/:id` should receive a query parameter that contains the id of a note to delete. To delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+    Expected behavior: The note will be saved and displayed in the list on the right of the screen.
 
+    *Adding a new note*
+    1. Press the "+" button in the upper right corner of the application window
+    2. Enter a title and text for the note (both are required)
+    3. Press the "Save" button in the upper right corner of the application window
 
-## Grading Requirements
+    Expected behavior: The note will be saved and displayed in the list on the left of the screen.
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+    *Edit a saved note*
+    1. Select the note in the right side of the application window
+    2. Enter a new title or text for the note 
+    3. Press the "Save" button in the upper right corner of the application window
 
-This Challenge is graded based on the following criteria: 
+    Expected behavior: The edited note will be saved and displayed in the list on the left of the screen.
 
+    *Delete a saved note*
+    1. Press the "trash can" icon on the right side of the application window
+    
+    Expected behavior: The note will be deleted from the application's database and the window will be refreshed.
 
-### Technical Acceptance Criteria: 40%
+    *Known issues*
+    • When editing an existing note, the "write" icon does not appear in the upper right corner of the application window. This issue is cosmetic, notes can still be edited by placing the cursor in the title or text fields and pressing the "save" icon. This issue needs be investigated, I need to more closely examine the starter code for the front-end, and addressed in the 1.v1 release of the application.
 
-* Satisfies all of the preceding acceptance criteria plus the following:
+    • After editing a note, the original text will display in the main window. I believe I need to add a `e.stopPropagation();` method to resolve this issue. It will be addressed in the 1.v1 release of the application.
+xw
+    </details>
 
-  * Application front end must connect to an Express.js back end.
+## Testing
 
-  * Application back end must store notes that have a unique id in a JSON file.
+The 1.0 version of this application does not have any unit tests.
 
-  * Application must be deployed to Heroku.
+## Video walkthroughs
 
+Please see [this video](https://drive.google.com/file/d/1efinYow4UgIfIJYJ8JEltp5H_yH8F5zN/view?usp=sharing) for a demonstration of installing the application, running locally and using the application.
 
-### Deployment: 36%
+Please see [this video](https://drive.google.com/file/d/1J5AXEQ3iRWJfFXKKlO6MYijpoWjyNK8_/view?usp=sharing) for a demonstration of running the application [deployed and hosted in Heroku](https://modulechallenge11-note-taker-ff941a52a963.herokuapp.com/).
 
-* Application deployed at live URL.
+## Screen captures
 
-* Application loads with no errors.
+A [screen capture](https://github.com/thoughtsinbuttermilk/11-ModuleChallenge-NoteTaker-sambailey/blob/9dcc2ace7e8cddd990c483469cfba45e9a9d121f/screencaptures/defaultstate.png)of the application after launch with a default note.
 
-* Application GitHub URL submitted.
+A [screen capture](https://github.com/thoughtsinbuttermilk/11-ModuleChallenge-NoteTaker-sambailey/blob/268a0d72336e3e2d229e71fb7d5e02e0c39df240/screencaptures/notesadded.png) of the application after a new notes have been added to the database.
 
-* GitHub repository contains application code.
+A [screen capture](https://github.com/thoughtsinbuttermilk/11-ModuleChallenge-NoteTaker-sambailey/blob/9dcc2ace7e8cddd990c483469cfba45e9a9d121f/screencaptures/notedeleted.png) of the application after the a note has been deleted from the database.
 
+## Credits and notes for the graders
 
-### Application Quality: 11%
+I would like to thank my Northwestern Bootcamp instructor, [NikkiTheBugSlayer](https://github.com/NikkiTheBugSlayer) for her exceptional investments to ensure our cohort is able to understand and learn the concepts taught during this coursework. Our teaching assistants, especially Jess, at TA who is subbing in this week, for your review of this assignment.  _Thank-you._
 
-* Application console is free of errors.
-
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-
-### Bonus: +10 Points
-
-Fulfilling the following can add up to 10 points to your grade. Note that the highest grade you can achieve is still 100:
-
-* Application allows users to delete notes.
-
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README describing the project.
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+Grading team: I appreciate that I have probably twice as many as many commits across all of my branches as lines of new code written!

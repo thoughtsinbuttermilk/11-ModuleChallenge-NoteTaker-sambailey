@@ -108,7 +108,7 @@ Please see [this video](https://drive.google.com/file/d/1J5AXEQ3iRWJfFXKKlO6MYij
 
 ## Screen captures
 
-A [screen capture]()of the application after launch with a default note.
+A [screen capture](https://github.com/thoughtsinbuttermilk/11-ModuleChallenge-NoteTaker-sambailey/blob/9dcc2ace7e8cddd990c483469cfba45e9a9d121f/screencaptures/defaultstate.png)of the application after launch with a default note.
 
 A [screen capture]() of the application after a new notes have been added to the database.
 

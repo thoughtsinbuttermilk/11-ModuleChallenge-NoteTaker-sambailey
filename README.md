@@ -106,7 +106,7 @@ Please see [this video](https://drive.google.com/file/d/1aDDjwtwXzxJPFkJf6fpb-a5
 
 ## Screen captures
 
-A [screen capture](https://github.com/thoughtsinbuttermilk/11-ModuleChallenge-NoteTaker-sambailey/blob/9dcc2ace7e8cddd990c483469cfba45e9a9d121f/screencaptures/defaultstate.png)of the application after launch with a default note.
+A [screen capture](https://github.com/thoughtsinbuttermilk/11-ModuleChallenge-NoteTaker-sambailey/blob/9dcc2ace7e8cddd990c483469cfba45e9a9d121f/screencaptures/defaultstate.png) of the application after launch with a default note.
 
 A [screen capture](https://github.com/thoughtsinbuttermilk/11-ModuleChallenge-NoteTaker-sambailey/blob/268a0d72336e3e2d229e71fb7d5e02e0c39df240/screencaptures/notesadded.png) of the application after a new notes have been added to the database.
 
@@ -114,6 +114,6 @@ A [screen capture](https://github.com/thoughtsinbuttermilk/11-ModuleChallenge-No
 
 ## Credits and notes for the graders
 
-I would like to thank my Northwestern Bootcamp instructor, [NikkiTheBugSlayer](https://github.com/NikkiTheBugSlayer) for her exceptional investments to ensure our cohort is able to understand and learn the concepts taught during this coursework. Our teaching assistants, especially Jess, at TA who is subbing in this week, for your review of this assignment.  _Thank-you._
+I would like to thank my Northwestern Bootcamp instructor, [NikkiTheBugSlayer](https://github.com/NikkiTheBugSlayer) for her exceptional investments to ensure our cohort is able to understand and learn the concepts taught during this coursework. Kudos to our teaching assistants, especially Jess, a TA who is subbing in this week, for your review of this assignment.  _Thank-you._
 
 Grading team: I appreciate that I have probably twice as many as many commits across all of my branches as lines of new code written!
